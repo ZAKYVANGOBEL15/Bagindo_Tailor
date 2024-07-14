@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Playwrite+CU:wght@100..400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+body {
+    font-family: Oswald;
+    background-color: #fff;
+}
+.con_dark {
+    background-color: #333;
+}
+.nav {
+    display: flex;
+    color: #333;
+    width: 100%;
+    background-color: #fff;
+    align-items: center;
+    justify-content: space-around;
+}
+.title-nav {
+    font-size: 30px;
+    font-family: Great Vibes;
+}
+.nav ul {
+    gap: 2rem;
+    display: flex;
+}
+.nav ul li {
+    padding: 20px;
+    list-style: none;
+    transition: .4s ease-in-out;
+}
+.nav ul li:hover {
+    background-color: antiquewhite;
+    padding: 20px;
+    list-style: none;
+}
+.nav ul li a {
+    color: #333;
+    text-decoration: none;
+}
+.toggle {
+    cursor: pointer;
+    display: none;
+}
+
+.sidebar {
+    display: none;
+}
+.sidebar2 {
+    display: none;
+}
+
+
+
+
+.container {
+    height: 100vh;
+    color: #333;
+    width: 100%;
+    gap: 10rem;
+    background-color: #fff;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.con-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    align-content: center;
+    width: 80%;
+    height: auto;
+    gap: 50px;
+} 
+
+
+.container .con-2 a {
+
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    color: #333;
+    border-radius: 5px;
+    transition: .2s ease-in-out;
+    background-color: lightgreen;
+    text-decoration: none;
+
+}
+.container .con-2 a:hover {
+
+    scale: 1.1;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    color: #fff;
+    border-radius: 5px;
+    background-color: lightgreen;
+    text-decoration: none;
+
+}
+
+
+
+
+.con-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    align-content: center;
+    width: 80%;
+    height: 100vh;
+} 
+.title-cont-h1 {
+    font-size: 50px;
+}
+img {
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+}
+
+
+.container2 {
+    height: auto;
+    width: 100%;
+    color: #fff;
+    background-color: #333;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+span {
+    font-size: 30px;
+}
+.title-addresa {
+    align-items: center;
+    display: flex;
+}
+.maps {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 40px;
+    width: 100%;
+    height: fit-content;
+}
+
+
+footer {
+    background-color: #333;
+    height: 10vh;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+
+@media screen and (max-width: 740px) {
+
+    .nav {
+        display: flex;
+        color: #333;
+        position: fixed;
+        width: 100%;
+        height: 4rem;
+        border-bottom: 1px solid #333;
+        background-color: #fff;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .nav ul {
+        display: none;
+    }
+    .toggle {
+        display: flex;
+    }
+    i {
+        font-size: 40px;
+    }
+    .con_dark {
+        background-color: #333;
+    }
+
+    .sidebar {
+        height: 100vh;
+        background-color: #33333386;
+        width: 100%;
+        transition: .4s ease-in-out;
+        backdrop-filter: blur(10px);
+        margin-top: 2.5rem;
+        position: fixed;
+        flex-direction: column;
+        margin-left: -900px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+    .sidebar ul {
+        gap: 2rem;
+        
+        display: flex;
+        flex-direction: column;
+    }
+    .sidebar ul li {
+        padding: 20px;
+        list-style: none;
+        transition: .4s ease-in-out;
+    }
+    .sidebar ul li a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+
+    .darkmode {
+        background-color: #333;
+        height: 30px;
+        width: 50px;
+        display: flex;
+        
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+    }
+    .round {
+        height: 20px;
+        transition: .2s ease-in-out;
+        border-radius: 100px;
+        width: 20px;
+        margin-left: -20px;
+        background-color: #fff;
+    }
+    .round_after {
+        height: 20px;
+        border-radius: 100px;
+        width: 20px;
+        margin-left: 20px;
+        background-color: #fff;
+    }
+
+
+    .sidebar2 {
+        margin-left: 0;
+        height: 100vh;
+        background-color: #33333386;
+        width: 100%;
+        transition: .4s ease-in-out;
+        backdrop-filter: blur(10px);
+        margin-top: 2.5rem;
+        position: fixed;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+
+
+
+
+    .con-2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        text-align: center;
+        flex-wrap: wrap;
+        align-content: center;
+        width: 80%;
+        height: auto;
+        gap: 10px;
+    } 
+    .con-3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        text-align: center;
+        flex-wrap: wrap;
+        align-content: center;
+        width: 80%;
+        height: auto;
+        gap: 10px;
+    } 
+    img {
+        width: 100%;
+    }
+
+    
+}
