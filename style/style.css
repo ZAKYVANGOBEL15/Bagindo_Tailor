@@ -123,8 +123,9 @@ body {
 .title-cont-h1 {
     font-size: 50px;
 }
-img {
+.img-banner {
     border-radius: 10px;
+    height: 200px;
     box-shadow: 0 0 10px black;
 }
 
@@ -224,31 +225,7 @@ footer {
     }
 
 
-    .darkmode {
-        background-color: #333;
-        height: 30px;
-        width: 50px;
-        display: flex;
-        
-        justify-content: center;
-        align-items: center;
-        border-radius: 5px;
-    }
-    .round {
-        height: 20px;
-        transition: .2s ease-in-out;
-        border-radius: 100px;
-        width: 20px;
-        margin-left: -20px;
-        background-color: #fff;
-    }
-    .round_after {
-        height: 20px;
-        border-radius: 100px;
-        width: 20px;
-        margin-left: 20px;
-        background-color: #fff;
-    }
+   
 
 
     .sidebar2 {
@@ -293,9 +270,98 @@ footer {
         height: auto;
         gap: 10px;
     } 
-    img {
+    .img-banner {
         width: 100%;
     }
 
     
 }
+
+
+
+
+
+/* image.html */
+
+.container-image-full {
+    width: 100%;
+    height: auto;
+}
+
+.cont-image {
+    width: 90%;
+    justify-content: center;
+    display: flex;
+    padding-top: 30px;
+    border-radius: 10px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    gap: 0.5rem;
+    background-color: #333;
+    align-items: center;
+    height: auto;
+    margin-top: 4rem;
+}
+
+.img-baju {
+    height: 200px;
+    border-radius: 5px;
+}
+
+
+
+
+
+.image-1 {
+    width: 200px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #333;
+    opacity: 1;
+    border-radius: 5px;
+    height: auto;
+    transition: .2s ease-in-out;
+    background-color: #fff;
+}
+.image-1:hover {
+    width: 200px;
+    opacity: 0.7;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    scale: 0.9;
+    border: 1px solid #333;
+    height: auto;
+    background-color: #fff;
+}
+
+.harga {
+    color: red;
+}
+
+@media screen and (max-width: 740px) {
+
+    .cont-image {
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .image-1 {
+        width: 100px;
+        height: auto;
+    }
+    .image-1:hover {
+        width: 100px;
+        height: auto;
+        scale: 0.9;
+    }
+    .img-baju {
+        height: 100px;
+    }
+
+}
+
+/* image.html end */
