@@ -339,7 +339,7 @@ footer {
 }
 
 .harga {
-    color: red;
+    color: rgb(255, 0, 0);
 }
 
 @media screen and (max-width: 740px) {
@@ -350,16 +350,16 @@ footer {
     }
 
     .image-1 {
-        width: 100px;
+        width: 300px;
         height: auto;
     }
     .image-1:hover {
-        width: 100px;
+        width: 300px;
         height: auto;
         scale: 0.9;
     }
     .img-baju {
-        height: 100px;
+        height: 300px;
     }
 
 }
