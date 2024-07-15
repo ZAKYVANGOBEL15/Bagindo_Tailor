@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Playwrite+CU:wght@100..400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+
+* {
+    margin: 0;
+    scroll-behavior: smooth;
+    padding: 0;
+    font-family: Oswald;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+.container-gallery {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* nav */
+
+.nav {
+    display: flex;
+    color: #333;
+    width: 100%;
+    background-color: #fff;
+    align-items: center;
+    justify-content: space-around;
+}
+.title-nav {
+    font-size: 30px;
+    font-family: Great Vibes;
+}
+.nav ul {
+    gap: 2rem;
+    display: flex;
+}
+.nav ul li {
+    padding: 20px;
+    list-style: none;
+    transition: .4s ease-in-out;
+}
+
+.nav ul li a {
+    padding: 20px;
+    color: #333;
+    transition: .4s ease-in-out;
+    text-decoration: none;
+}
+.nav ul li a:hover {
+    padding: 20px;
+    color: #333;
+    background-color: bisque;
+    text-decoration: none;
+}
+.toggle {
+    cursor: pointer;
+    display: none;
+}
+
+.sidebar {
+    display: none;
+}
+.sidebar2 {
+    display: none;
+}
+
+/* Media Screen */
+
+@media screen and (max-width: 740px) {
+
+    .nav {
+        display: flex;
+        color: #333;
+        z-index: 999;
+        position: fixed;
+        width: 100%;
+        height: 4rem;
+        border-bottom: 1px solid #333;
+        background-color: #fff;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .nav ul {
+        display: none;
+    }
+    .toggle {
+        display: flex;
+    }
+    i {
+        font-size: 40px;
+    }
+    .con_dark {
+        background-color: #333;
+    }
+
+    .sidebar {
+        height: 100vh;
+        background-color: #33333386;
+        width: 100%;
+        transition: .4s ease-in-out;
+        backdrop-filter: blur(10px);
+        margin-top: 4rem;
+        position: fixed;
+        z-index: 999;
+        flex-direction: column;
+        margin-left: -900px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+    .sidebar ul {
+        gap: 2rem;
+        
+        display: flex;
+        flex-direction: column;
+    }
+    .sidebar ul li {
+        padding: 20px;
+        list-style: none;
+        transition: .4s ease-in-out;
+    }
+    .sidebar ul li a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+
+   
+
+
+    .sidebar2 {
+        margin-left: 0;
+        height: 100vh;
+        background-color: #33333386;
+        width: 100%;
+        z-index: 999;
+        transition: .4s ease-in-out;
+        backdrop-filter: blur(10px);
+        margin-top: 4rem;
+        position: fixed;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+
+}
+
+/* Media Screen end */
+
+
+/* nav end */
+
+.slide-wrapper {
+    overflow: hidden;
+    max-width: 1200px;
+    margin: 0 70px 55px;
+}
+
+
+.card-list .card-item {
+    color: #fff;
+    display: flex;
+    user-select: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    padding: 35px;
+    backdrop-filter: blur(38px);
+    border-radius: 8px;
+    background-color: rgba(255,255,255, 0.2);
+}
+.card-list .card-item .dress-name {
+   margin-top: 20px;
+}
+
+
+.card-list .card-item .dress-image {
+    border-radius: 10px;
+    height: 250px;
+    border: 3px solid #fff;
+}
+.dress-image {
+    width: 200px;
+    height: 200px;
+}
+.card-list .card-item .dress-description {
+    font-size: 1.15rem;
+    color: #e3e3e3;
+    margin: 14px 0 14px;
+}
+.card-list .card-item .buy {
+    font-size: 1.25rem;
+    padding: 10px 35px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    color: #333;
+    justify-content: center;
+    font-weight: 500;
+    border: 1px solid transparent;
+    transition: 0.2s ease;
+}
+.card-list .card-item .buy:hover {
+    background-color: rgba(255,255,255, 0.1);
+    border: 1px solid #fff;
+    color: #fff;
+
+}
+
+.slide-wrapper .swiper.pagination-bullet {
+    background-color: #fff;
+    height: 15px;
+    width: 15px;
+}
+.slide-wrapper .swiper-slide-button {
+    color: #fff;
+    margin-top: -50px;
+}
+.slide-wrapper .swiper-slide-button:hover {
+    color: #4658ff;
+}
+
+
+/* footer */
+
+footer {
+    background-color: #333;
+    height: 10vh;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+/* footer end */
+
+@media screen and (max-width: 740px) {
+    .slide-wrapper {
+        margin: 0 10px 40px;
+    }
+    .slide-wrapper .swiper-slide-button {
+        display: none;
+
+    }
+}

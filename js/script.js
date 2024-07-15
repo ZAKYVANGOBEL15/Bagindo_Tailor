@@ -8,7 +8,6 @@ const cont_image = document.querySelector('.cont-image')
 
 const thumb_image = document.querySelector('.thumb-image')
 
-const image_1 = document.querySelectorAll('.image-1')
 
 toggle.addEventListener('click', () => {
     sidebar.classList.toggle('sidebar2');
