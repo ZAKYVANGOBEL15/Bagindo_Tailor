@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Playwrite+CU:wght@100..400&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
 
 * {
     margin: 0;
@@ -24,7 +24,7 @@ body {
 }
 .title-nav {
     font-size: 30px;
-    font-family: Bona Nova SC;
+    font-family: Roboto Slab;
 }
 .nav ul {
     gap: 2rem;
@@ -127,6 +127,7 @@ body {
 } 
 .title-cont-h1 {
     font-size: 50px;
+    font-family: Roboto Slab;
 }
 .img-banner {
     height: 200px;
@@ -177,6 +178,7 @@ footer {
         display: flex;
         color: #333;
         width: 100%;
+        z-index: 999;
         position: fixed;
         height: 4rem;
         border-bottom: 1px solid #333;
@@ -203,7 +205,6 @@ footer {
         width: 100%;
         transition: .4s ease-in-out;
         backdrop-filter: blur(10px);
-        margin-top: 2.5rem;
         position: fixed;
         flex-direction: column;
         margin-left: -900px;
@@ -239,7 +240,6 @@ footer {
         width: 100%;
         transition: .4s ease-in-out;
         backdrop-filter: blur(10px);
-        margin-top: 2.5rem;
         position: fixed;
         flex-direction: column;
         align-items: center;
@@ -276,6 +276,11 @@ footer {
     } 
     .img-banner {
         width: 100%;
+    }
+
+    .title-cont-h1 {
+        font-size: 30px;
+        font-family: Roboto Slab;
     }
 
     
