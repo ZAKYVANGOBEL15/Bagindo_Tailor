@@ -72,10 +72,7 @@ body {
 }
 
 
-.title-cont-h1 {
-    font-size: 50px;
-    font-family: Roboto Slab;
-}
+
 
 /* Media Screen */
 
@@ -96,11 +93,29 @@ body {
     .nav ul {
         display: none;
     }
-    .toggle {
-        display: flex;
+    .humburger {
+        display: inline-block;
+        cursor: pointer;
     }
-    i {
-        font-size: 40px;
+    .bar1, .bar2, .bar3 {
+        width: 35px;
+        transition: .3s ease;
+        border-radius: 15px;
+        margin: 7px;
+        height: 4px;
+        background-color: #333;
+    }
+    .change .bar1 {
+        transform: translate(0, 11px) rotate(45deg);
+        background-color: red;
+    }
+    .change .bar2 {
+        opacity: 0;
+        margin-left: -999px;
+    }
+    .change .bar3 {
+        transform: translate(0, -11px) rotate(-45deg);
+        background-color: red;
     }
     .con_dark {
         background-color: #333;
@@ -140,7 +155,7 @@ body {
    
 
 
-    .sidebar2 {
+    .sidebar_after {
         margin-left: 0;
         height: 100vh;
         background-color: #33333386;
